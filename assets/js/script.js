@@ -1,23 +1,30 @@
 // Wait for the DOM to finish loading before running the game
-// Get the button elements and add event listeners to them
 
-document.addEventListener("DOMContentLoaded", function() {
-    let buttons = document.getElementsByTagName()
-})
 
-function getComputerChoice() {
 
-}
+        function getComputerChoice() {
 
-function determineWinner() {
+        }
 
-}
+        function determineWinner(userChoice, pcChoice) {
+            if (userChoice === pcChoice) {
+                return "It's a tie!";
+            } else if (
+                (userChoice === "rock" && pcChoice === "scissors") ||
+                (userChoice === "scissors" && pcChoice === "paper") ||
+                (userChoice === "paper" && pcChoice === "rock")
+            ) {
+                return "You win!";
+            } else {
+                return "You lose!";
+            }
+        }
 
-function updateScore() {
+        function updateScore() {
 
-}
+        }
 
-function showbothchoices() {
+        function showBothChoices() {
 
-}
+        }
 
