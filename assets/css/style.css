@@ -52,8 +52,9 @@ p {
 
 .score-area {
     margin: 5px auto;
-    width: 60%;
+    width: 40%;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 /* Buttons */
@@ -77,6 +78,14 @@ p {
     margin: 0 30px;
     transition: all 0.5s;
 }
+
+.btn--big::after {
+    content: attr(data-type);
+    font-size: 1.5rem;
+    color: black;
+    position: relative;
+}
+
 
 .btn--blue {
     border-color: blue;
