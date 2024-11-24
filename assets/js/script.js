@@ -1,7 +1,5 @@
 // Wait for the DOM to finish loading before running the game
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Initialize user and computer scores
     let userScore = 0;
     let pcScore = 0;
 
@@ -41,12 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (result === "You lose!") {
             pcScore++;
         }
-        return { userScore, pcScore };
-    }
-
+    
     // Function to show both choices
     function showBothChoices(result, userChoice, pcChoice) {
         return `You chose ${userChoice}. Computer chose ${pcChoice}. ${result}`;
     }
+
+    // Handle user button click
+    function handleUserChoice(playerChoice) {
+        const pcChoice = getComputerChoice();
+        const result = determineWinner(playerChoice, pcChoice);
+        const message = showChoices(playerChoice, pcChoice, result);
+
+    // Update the score on the screen
+    userScoreElement.textContent = userScore;
+    pcScoreElement.textContent = pcScore;
+}
 
 });
