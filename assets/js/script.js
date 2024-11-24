@@ -9,6 +9,7 @@
             return choices[randomIndex];
         }
 
+// Function to determine the winner between user and pc
         function determineWinner(userChoice, pcChoice) {
             if (userChoice === pcChoice) {
                 return "It is a draw";
@@ -23,11 +24,18 @@
             }
         }
 
-        function updateScore() {
-
+    // Function to update the score between user and pc
+        function updateScore(result, userScore, pcScore) {
+            if (result === "You win!") {
+                userScore++;
+            } else if (result === "You lose!") {
+                pcScore++;
+            }
+            return { userScore, pcScore };
         }
 
-        function showBothChoices() {
-
+    // Function to show both choices
+        function showBothChoices(result, userChoice, pcChoice) {
+            return `You chose ${userChoice}. Computer chose ${pcChoice}. ${result}`;
         }
 
