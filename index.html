@@ -34,17 +34,17 @@
     <div class="game-area">
         <div class="controls-area">
             <p>Make your move:</p>
-            <button class="btn btn--big btn--red">
-            <i class="fa-solid fa-hand-back-fist"></i>
-        </button>
-            <button class="btn btn--big btn--blue">
+            <button data-type="rock" class="btn btn--big btn--red">
+                <i class="fa-solid fa-hand-back-fist"></i>
+            </button>
+            <button data-type="paper" class="btn btn--big btn--blue">
                 <i class="fa-solid fa-hand"></i>
             </button>
-            <button class="btn btn--big btn--green">
+            <button data-type="scissors" class="btn btn--big btn--green">
                 <i class="fa-solid fa-hand-scissors"></i>
             </button>
         </div>
-        <div id="messages"></div>
+        <div id="score-area"></div>
         <div class="player">
             <h2 class="score"> Player Score: <span id="player-score">0</span></h2>
         </div>
