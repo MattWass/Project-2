@@ -44,6 +44,12 @@ header {
     padding: 1%;
 }
 
+p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
 .score-area {
     margin: 5px auto;
     width: 60%;
