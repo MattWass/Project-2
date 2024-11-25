@@ -51,7 +51,8 @@ Welcome to [Rock, Paper, Scissors!](https://mattwass.github.io/Project-2/)
 ### Bugs
 
 Solved Bugs
-- 
+- I could not get my favicon to display due to not having the correct code attached to it. Tutor Support helped me with this and added in the relevant line of code so that my favicon would display.
+- I also had an error passing my JavaScript through the validator but realised again through the guidance of tutor support, that I had not configured the settings to accomodate for new JavaScript features.
 
 ### Validation
 
@@ -101,4 +102,3 @@ Solved Bugs
 
 - Font Awesome Icons from [Font Awesome Icons](https://fontawesome.com/icons)
 - Google Font from [Google Fonts](https://fonts.google.com/)
-
