@@ -74,4 +74,18 @@ Solved Bugs
 
 ### Unfixed Bugs
 
-- No bugs that are unfixed
+
+## Deployment
+
+
+## Acknowledgements
+
+
+### Content
+
+
+### Media
+
+- Font Awesome Icons from [Font Awesome Icons](https://fontawesome.com/icons)
+- Google Font from [Google Fonts](https://fonts.google.com/)
+
