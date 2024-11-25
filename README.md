@@ -67,4 +67,11 @@ Solved Bugs
 
  - JavaScript
 
+- Accessibility:
+  - The webpage scores relatively well in the lighthouse report
 
+![alt text](image-6.png)
+
+### Unfixed Bugs
+
+- No bugs that are unfixed
