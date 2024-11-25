@@ -30,7 +30,7 @@ Welcome to [Rock, Paper, Scissors!](https://mattwass.github.io/Project-2/)
     ![alt text](image-2.png)
 
 - The Outcome
-  - The winner is defined by answering the correct outcome to a given match up, this naturally creates a losing side.
+  - The winner is defined by answering the correct outcome to a given match up, this naturally creates a losing side as well.
   - If both sides select the same choice then result is defined as a draw.
 
 - The Footer
