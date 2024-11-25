@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let pcScore = 0;
 
     // Select elements for score and messages
-    const userScoreElement = document.getElementById("player-score"); // Assuming 'player-score' is for user
+    const userScoreElement = document.getElementById("player-score");
     const pcScoreElement = document.getElementById("pc-score");
     const messagesElement = document.getElementById("messages");
 

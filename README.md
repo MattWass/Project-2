@@ -16,7 +16,7 @@ Welcome to [Rock, Paper, Scissors!](https://mattwass.github.io/Project-2/)
 
 - The Game Area 
   - This section diplays the choice of either Rock, Paper or Scissors to go up against the computer.
-  - Upon clicking the relavant action, the computer will also show what they have chosen. Whoever has won will receive a point.
+  - Upon clicking the relavant action, the computer will also show what they have chosen. Whoever has won will receive a point. If both the player and the computer are to make the same choice, then no point shall be awarded.
   - This can be seen in the exmaple below. where we can see thatthe player won the game, as a they chose rock, whereas the computer chose scissors. "You have won!" is then displayed to confirm that the player has won that round.
 
   ![alt text](image.png)
@@ -73,7 +73,7 @@ Solved Bugs
  ![alt text](image-8.png)
 
 - Accessibility:
-  - The webpage scores relatively well in the lighthouse report
+  - The webpage scores relatively well in the lighthouse report.
 
 ![alt text](image-6.png)
 
