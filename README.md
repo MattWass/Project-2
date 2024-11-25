@@ -94,7 +94,8 @@ Solved Bugs
 
 ### Content
 
-
+- Inspiration for my project was taken from the JavaScript Essentials modules  as well as the Love Maths project I took part in. 
+- The knowledge and use of font awesome icons and favicons was used following prior knowledge gained earlier in the course. 
 
 ### Media
 
