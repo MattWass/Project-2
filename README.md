@@ -67,6 +67,10 @@ Solved Bugs
 
  - JavaScript
 
+   - The webpage passes in the JSHint validator 
+
+ ![alt text](image-8.png)
+
 - Accessibility:
   - The webpage scores relatively well in the lighthouse report
 
@@ -74,6 +78,7 @@ Solved Bugs
 
 ### Unfixed Bugs
 
+  - No bugs that are unfixed
 
 ## Deployment
 
