@@ -47,7 +47,24 @@ Welcome to [Rock, Paper, Scissors!](https://mattwass.github.io/Project-2/)
 
 - I can confirm that the webpage is responsive on various screen sizes, using the devtools device toolbar. I tested this with an iphone 12 pro and an iphone 14 pro max in devtools.
 - I can confirm  that all sections of the webpage are clear, easy to read and understand.
-I can confirm that the form on the webpage works and displays the relevant criteria upon being submitted.
 
+### Bugs
+
+Solved Bugs
+- 
+
+### Validation
+
+- HTML
+  - The webpage passes in the html validator
+
+  ![alt text](image-3.png)
+
+- CSS
+  - The webpage passes in the css jigsaw validator 
+
+ ![alt text](image-5.png)
+
+ - JavaScript
 
 
