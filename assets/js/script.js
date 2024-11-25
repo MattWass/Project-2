@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             (userChoice === "scissors" && pcChoice === "paper") ||
             (userChoice === "paper" && pcChoice === "rock")
         ) {
-            userScore++; // Increment user score if they win
+            userScore++; 
             return "You have won!";
         } else {
-            pcScore++; // Increment PC score if they win
+            pcScore++; 
             return "You have lost!";
         }
     }
