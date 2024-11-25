@@ -1,5 +1,6 @@
-# Project-2
-Rock, Paper, Scissors game to played by people of any age. 
+# Rock, Paper. Scissors!
+
+Rock, Paper, Scissors is a game that can be played by almost people of any age. This website allows friends, family, or even people having a spare 10-15mins on their dinner break, to particapte in a classic game of rock paper scissors against the computer.
 
 Features:
 
