@@ -4,13 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let pcScore = 0;
 
     // Select elements for score and messages
-    const userScoreElement = document.getElementById("user-score");
+    const userScoreElement = document.getElementById("player-score"); // Assuming 'player-score' is for user
     const pcScoreElement = document.getElementById("pc-score");
     const messagesElement = document.getElementById("messages");
 
-
     // Function to get the computer's choice
-    // This function randomly chooses 0, 1 or 2
     function getComputerChoice() {
         const choices = ["rock", "paper", "scissors"];
         const randomIndex = Math.floor(Math.random() * 3);
@@ -20,29 +18,29 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to determine the winner between user and pc
     function determineWinner(userChoice, pcChoice) {
         if (userChoice === pcChoice) {
-            return "It is a draw";
+            return "It is a draw!";
         } else if (
             (userChoice === "rock" && pcChoice === "scissors") ||
             (userChoice === "scissors" && pcChoice === "paper") ||
             (userChoice === "paper" && pcChoice === "rock")
         ) {
-            return "You have won";
+            userScore++; // Increment user score if they win
+            return "You have won!";
         } else {
-            return "You have lost";
+            pcScore++; // Increment PC score if they win
+            return "You have lost!";
         }
     }
 
-    // Function to update the score between user and pc
-    function updateScore(result, userScore, pcScore) {
-        if (result === "You win!") {
-            userScore++;
-        } else if (result === "You lose!") {
-            pcScore++;
-        }
-    
-    // Function to show both choices
-    function showBothChoices(result, userChoice, pcChoice) {
-        return `You chose ${userChoice}. Computer chose ${pcChoice}. ${result}`;
+    // Function to show both choices and the result
+    function showChoices(userChoice, pcChoice, result) {
+        return `You chose ${userChoice}. PC chose ${pcChoice}. ${result}`;
+    }
+
+    // Update the score on the screen
+    function updateScore() {
+        userScoreElement.textContent = userScore;
+        pcScoreElement.textContent = pcScore;
     }
 
     // Handle user button click
@@ -51,9 +49,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const result = determineWinner(playerChoice, pcChoice);
         const message = showChoices(playerChoice, pcChoice, result);
 
-    // Update the score on the screen
-    userScoreElement.textContent = userScore;
-    pcScoreElement.textContent = pcScore;
-}
+        // Display the result message
+        messagesElement.textContent = message;
 
+        // Update the score on the screen
+        updateScore();
+    }
+
+    // Set up event listeners for the buttons
+    const buttons = document.querySelectorAll(".btn");
+    buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const playerChoice = button.getAttribute("data-type").toLowerCase();
+            handleUserChoice(playerChoice);
+        });
+    });
 });
