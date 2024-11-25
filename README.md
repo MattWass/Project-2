@@ -82,11 +82,18 @@ Solved Bugs
 
 ## Deployment
 
+ The webpage has been deployed to GitHub pages with the steps below:
+  - From the GitHub repository navigate to the settings tab
+  - From the source section select Master Branch
+  - From the Master Branch been selected the link is provided to the website
 
 ## Acknowledgements
 
+- Tutor Support for guidance with my Favicon not displaying and adding in the relevant line of code for me so it worked.
+- Student Care, for all their support and guidance over what has been a very challenging time for myself and my family over the last month.
 
 ### Content
+
 
 
 ### Media
